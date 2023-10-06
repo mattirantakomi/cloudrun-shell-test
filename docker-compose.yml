@@ -1,0 +1,7 @@
+version: "2.1"
+services:
+  cloudrun:
+    ports:
+      - "127.0.0.1:1234:8080"
+    build: .
+    image: mattirantakomi/cloudrun-shell-test:latest
