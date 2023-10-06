@@ -1,16 +1,16 @@
 server {
-	listen 8080 default_server;
-	listen [::]:8080 default_server;
+    listen 8080 default_server;
+    listen [::]:8080 default_server;
 
-	root /var/www/html;
-	index index.html index.htm index.nginx-debian.html;
+    root /var/www/html;
+    index index.html index.htm index.nginx-debian.html;
     error_log  stderr warn;
     access_log  /dev/stdout;
 
-	server_name _;
-	location / {
-		try_files $uri $uri/ =404;
-	}
+    server_name _;
+    location / {
+        try_files $uri $uri/ =404;
+    }
 
     location /proxy {
         auth_basic "Proxy";
