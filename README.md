@@ -1,5 +1,5 @@
 # Create Cloud Run service
-# Remember to populate `AUTHORIZED_KEYS` with your SSH Public Key and `PROXY_PASSWORD` with some password.
+Remember to populate `AUTHORIZED_KEYS` with your SSH Public Key and `PROXY_PASSWORD` with some password.
 
 ```
 gcloud alpha run deploy cloudrun-shell-test \
@@ -18,7 +18,7 @@ gcloud alpha run deploy cloudrun-shell-test \
    --project <your gcp project id>
 ```
 
-# Open Gcloud Proxy to Cloud Run service. 
+# Open Gcloud Proxy to Cloud Run service
 It doesn't drop to background so you need to open another terminal for next command.
 Optionally add `&` to the end of the command.
 ```
