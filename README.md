@@ -1,5 +1,5 @@
 # Create Cloud Run service
-Remember to populate `AUTHORIZED_KEYS` with your SSH Public Key and `PROXY_PASSWORD` with some password.
+Add your SSH Public Key to `AUTHORIZED_KEYS` with your SSH Public Key and `PROXY_PASSWORD` with some password.
 
 ```
 gcloud alpha run deploy cloudrun-shell-test \
